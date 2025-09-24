@@ -10,7 +10,7 @@ function App() {
           </p>
           <div className={styles.error}>Введенное значение должно содержать минимум 3 символа</div>
           <div className={styles['buttons-container']}>
-            <button className={styles.button}>Ввести новое</button>
+            <button className={styles.button}>Ввести новое:</button>
             <button className={styles.button} disabled>
               Добавить в список
             </button>
