@@ -1,6 +1,11 @@
+import { useState } from 'react';
 import styles from './App.module.css';
 
 function App() {
+  const [value, setValue] = useState('')
+  const [list, setList] = useState([])
+  const [error, setError] = useState('')
+
   return (
     <>
       <div className={styles.app}>
