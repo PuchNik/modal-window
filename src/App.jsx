@@ -3,28 +3,26 @@ import './App.css';
 function App() {
   return (
     <>
-      <body>
-        <div class="app">
-          <h1 class="page-heading">Ввод значения</h1>
-          <p class="no-margin-text">
-            Текущее значение <code>value</code>: "<output class="current-value"></output>"
+      <div className="app">
+          <h1 className="page-heading">Ввод значения</h1>
+          <p className="no-margin-text">
+            Текущее значение <code>value</code>: "<output className="current-value"></output>"
           </p>
-          <div class="error">Введенное значение должно содержать минимум 3 символа</div>
-          <div class="buttons-container">
-            <button class="button">Ввести новое</button>
-            <button class="button" disabled>
+          <div className="error">Введенное значение должно содержать минимум 3 символа</div>
+          <div className="buttons-container">
+            <button className="button">Ввести новое</button>
+            <button className="button" disabled>
               Добавить в список
             </button>
           </div>
-          <div class="list-container">
-            <h2 class="list-heading">Список:</h2>
-            <p class="no-margin-text">Нет добавленных элементов</p>
-            <ul class="list">
-              <li class="list-item">Первый элемент</li>
+          <div className="list-container">
+            <h2 className="list-heading">Список:</h2>
+            <p className="no-margin-text">Нет добавленных элементов</p>
+            <ul className="list">
+              <li className="list-item">Первый элемент</li>
             </ul>
           </div>
         </div>
-      </body>
     </>
   );
 }
