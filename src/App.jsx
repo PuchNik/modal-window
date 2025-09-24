@@ -6,6 +6,11 @@ function App() {
   const [list, setList] = useState([])
   const [error, setError] = useState('')
 
+  function onInputButtonClick() {
+    const userInput = prompt("Введите что-нибудь:");
+    console.log(userInput);
+  } 
+
   return (
     <>
       <div className={styles.app}>
@@ -15,7 +20,7 @@ function App() {
           </p>
           <div className={styles.error}>Введенное значение должно содержать минимум 3 символа</div>
           <div className={styles['buttons-container']}>
-            <button className={styles.button}>Ввести новое</button>
+            <button className={styles.button} onClick={onInputButtonClick}>Ввести новое</button>
             <button className={styles.button} disabled>
               Добавить в список
             </button>
