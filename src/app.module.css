@@ -1,49 +1,62 @@
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+/* Removed unused styles: .logo, .card, .read-the-docs, animations */
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
+/* Error states */
 .error-true {
-  color: red;
+    color: var(--error-color);
+    font-size: var(--font-size-sm);
+    margin-top: var(--spacing-sm);
 }
 
 .error-false {
-  color: white;
+    color: transparent;
+    font-size: var(--font-size-sm);
+    margin-top: var(--spacing-sm);
 }
 
+/* List styles */
 .list-item {
-  text-align: left;
-  font-weight: bold;
-  font-size: 1.2em;
+    text-align: left;
+    font-weight: bold;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Input styles */
+.input-container {
+    margin-bottom: var(--spacing-md);
+}
+
+.input-field {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem var(--spacing-md);
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-base);
+    transition: border-color 0.2s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.input-field::placeholder {
+    color: #888;
+}
+
+/* Button container */
+.buttons-container {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Page layout */
+.page-heading {
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.current-value {
+    font-weight: bold;
+    color: var(--primary-color);
 }
